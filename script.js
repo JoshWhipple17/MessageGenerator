@@ -10,22 +10,22 @@ const pronouns = ["I","You","She","He","They","We"];
 const actions = ["buy","sell","spin","draw"];
 const nouns = ["cars","trucks","rabbits","chickens","ballons","whales"];
 
-const randomPronoun = () => {
+const randomNumber = (limit, min = 0) => {
+    return Math.floor(Math.random() * limit + min);
+};
 
+const randomPronoun = () => {
+    return pronouns[randomNumber(pronouns.length)];
 };
 
 const randomAction = () => {
-
-};
-
-const randomNumber = () => {
-
+    return actions[randomNumber(actions.length)];
 };
 
 const randomNoun = ()  => {
-
+    return nouns[randomNumber(nouns.length)];
 };
 
 const createRandomMessage = () => {
-    return "(Pronoun) forgot to (Action) (Number) (Noun).";
+    return `${randomPronoun()} forgot to ${randomAction()} ${randomNumber(8,2)} ${randomNoun()}.`;
 };
