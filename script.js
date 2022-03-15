@@ -29,3 +29,6 @@ const randomNoun = ()  => {
 const createRandomMessage = () => {
     return `${randomPronoun()} forgot to ${randomAction()} ${randomNumber(8,2)} ${randomNoun()}.`;
 };
+
+console.log("Welcome to the Forgetfulness Game. Let's see who forgot something!");
+console.log(createRandomMessage());
