@@ -8,7 +8,6 @@
 
 const pronouns = ["I","You","She","He","They","We"];
 const actions = ["buy","sell","spin","draw"];
-const numbers = [];
 const nouns = ["cars","trucks","rabbits","chickens","ballons","whales"];
 
 const randomPronoun = () => {
