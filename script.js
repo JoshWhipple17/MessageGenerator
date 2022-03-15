@@ -6,10 +6,10 @@
  - Combine all the randomly selected elements from Pronoun, Action, Number, Noun
 */
 
-const pronouns = [];
-const actions = [];
+const pronouns = ["I","You","She","He","They","We"];
+const actions = ["buy","sell","spin","draw"];
 const numbers = [];
-const nouns = [];
+const nouns = ["cars","trucks","rabbits","chickens","ballons","whales"];
 
 const randomPronoun = () => {
 
